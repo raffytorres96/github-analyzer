@@ -3,7 +3,7 @@ from typing import Optional
 from datetime import datetime
 
 @dataclass
-class GitHubUser:
+class GithubUser:
     login: str
     public_repos: int
     followers: int

@@ -14,3 +14,18 @@ class GithubUser:
     bio: Optional[str] = None
     hireable: Optional[bool] = None
     email: Optional[str] = None
+
+@dataclass
+class GithubRepo:
+    full_name: str
+    owner: str
+    html_url: str
+    fork: bool
+    forks: int
+    size: int
+    visibility: str
+    created_at: datetime
+    updated_at: datetime
+    stargazers_count: int
+    language: Optional[str] = None
+    description: Optional[str] = None

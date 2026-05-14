@@ -19,10 +19,7 @@ class GithubClient:
             raise ConnectionError("Impossibile connettersi a GitHub")
         except requests.exceptions.HTTPError:
             raise Exception(f"Errore HTTP: {response.status_code}")
-
-                
-
-        print(response.status_code)
+        
 
         data = response.json()
         utente = GithubUser(

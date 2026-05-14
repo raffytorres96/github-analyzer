@@ -27,7 +27,10 @@ class GithubClient:
             public_repos=data["public_repos"],
             followers=data["followers"],
             html_url=str(data["html_url"]),
-            created_at=datetime.fromisoformat(data["created_at"].replace("Z", "+00:00"))
+            created_at=datetime.fromisoformat(data["created_at"].replace("Z", "+00:00")),
+            location=data["location"],
+            name=data["name"],
+            bio=data["bio"]
         )
 
         return utente

@@ -10,7 +10,7 @@ class GithubUser:
     html_url: str
     created_at: datetime
     name: Optional[str] = None
-    city: Optional[str] = None
+    location: Optional[str] = None
     bio: Optional[str] = None
     hireable: Optional[bool] = None
     email: Optional[str] = None

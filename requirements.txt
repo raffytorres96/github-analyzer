@@ -8,4 +8,6 @@ Pygments==2.20.0
 pytest==9.0.3
 python-dotenv==1.2.2
 requests==2.34.1
+SQLAlchemy==2.0.49
+typing_extensions==4.15.0
 urllib3==2.7.0
